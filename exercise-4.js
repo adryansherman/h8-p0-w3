@@ -8,6 +8,7 @@ function dataHandling2(input){
   
     var birthday = input[3]
     var tanggal = birthday.split('/');
+    var tanggal2 = birthday.split('/');
     var bulanDoang = tanggal[1];
     console.log(bulanDoang);
 
@@ -43,7 +44,7 @@ console.log(namaBulan);
 var urutTanggal = tanggal.sort(function(value1, value2) {return Number(value1) < Number(value2)});
 console.log(urutTanggal);
 
-console.log(tanggal.join('-'));
+console.log(tanggal2.join('-'));
 
 var namaOrang = input[1];
 console.log(namaOrang.slice(0,15));
