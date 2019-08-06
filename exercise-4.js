@@ -10,7 +10,7 @@ function dataHandling2(input){
     var tanggal = birthday.split('/');
     var tanggal2 = birthday.split('/');
     var bulanDoang = tanggal[1];
-    console.log(bulanDoang);
+   
 
     namaBulan = '';
     switch(bulanDoang){
