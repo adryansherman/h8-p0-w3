@@ -1,6 +1,15 @@
 function perkalianUnik(arr) {
-    
+  var hasilKali = [];
+    for (i = 0; i < arr.length; i++){
+      var perkalian = 1;
+      for(j = i; j < arr.length; j++){
+        perkalian = perkalian * arr[j];
+      }
+      hasilKali[i] = perkalian;
+    }
+    return hasilKali
   }
+
   
   // TEST CASES
   console.log(perkalianUnik([2, 4, 6])); // [24, 12, 8]

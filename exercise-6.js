@@ -1,7 +1,6 @@
 function angkaPalindrome(num){
 palindrome = false;
 while(palindrome == false){
-    num++;
     var stringNum = String(num);
     var balikNum = '';
     for(var i = 0; i < stringNum.length; i++){
@@ -10,6 +9,7 @@ while(palindrome == false){
         palindrome = true;
         return num
     }
+    num++;
 }
 }
 console.log(angkaPalindrome(8)); // 9
