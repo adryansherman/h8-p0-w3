@@ -1,5 +1,15 @@
 function mengelompokkanAngka(arr) {
-    
+    var newArray = [[],[],[]];
+    for (var i = 0; i < arr.length; i++){
+        if (arr[i] % 3 === 0){
+            newArray[2].push(arr[i]);
+        }else if(arr[i] % 2 > 0){
+            newArray[1].push(arr[i]);
+        }else if(arr[i] % 2 === 0 ){
+            newArray[0].push(arr[i]);
+        }
+    }
+    return newArray
   }
   
   // TEST CASES

@@ -1,17 +1,17 @@
 function tentukanDeretAritmatika(arr) {
-  var tampung ='';
+  var cekFalse ='';
+  var cekTrue ='';
   var deret = arr[1] -arr[0];
   for(var i = 0; i < arr.length-1; i++){
     
-    if(arr[i+1] - arr[i] === arr[i+2] - arr[i+1]){
-      tampung = tampung + arr[i+1] - arr[i] === arr[i+2] - arr[i+1];
-    } 
+    if(arr[i+1] - arr[i] !== deret){
+      cekFalse = cekFalse + arr[i+1] - arr[i] !== deret
+      return false;
+    } else if(arr[i+1] - arr[i] === deret){
+      cekTrue = cekTrue + arr[i+1] - arr[i] === deret
+    }
   }
-  if(tampung === deret ){
-    return true
-  } else{
-    return true
-  }
+  return true
 
 }
   

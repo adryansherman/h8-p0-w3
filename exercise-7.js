@@ -3,7 +3,6 @@
 function hitungJumlahKata(kalimat) {
    var arrkalimat = kalimat.split(' ');
    return arrkalimat.length;
-   
   }
   
   // TEST CASES

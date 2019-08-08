@@ -4,9 +4,8 @@ function pasanganTerbesar(num) {
     var pasangan = '';
     var stringNum = String(num);
     for(var i = 0; i < stringNum.length; i++){
-    var urutanPasangan = Number(stringNum[i] + stringNum[i+1]);
-        if (urutanPasangan > pasangan){
-            pasangan = urutanPasangan;
+        if (Number(stringNum[i] + stringNum[i+1])> pasangan){
+            pasangan = Number(stringNum[i] + stringNum[i+1]);
         }
   }
   return pasangan

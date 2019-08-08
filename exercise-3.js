@@ -8,15 +8,14 @@ var input = [
 
 function dataHandling(input) {
     var panjangInput = input.length;
-    var i = 0;
+  
     
-    while (i < panjangInput) {
+    for (var i = 0; i < panjangInput; i++) {
         console.log ('Nomor ID:', input [i][0]);
         console.log ('Nama Lengkap:', input [i][1]);
         console.log ('TTL:', input [i][2], input [i][3]);
         console.log ('Hobi:', input [i][4]);
         console.log('==============');
-        i++;
     }
     
     
