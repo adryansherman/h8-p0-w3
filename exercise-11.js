@@ -1,14 +1,14 @@
 function tentukanDeretAritmatika(arr) {
-  var cekFalse ='';
-  var cekTrue ='';
-  var deret = arr[1] -arr[0];
-  for(var i = 0; i < arr.length-1; i++){
+  // var cekFalse ='';
+  // var cekTrue ='';
+  // var deret = arr[1] -arr[0];
+  for(var i = 1; i < arr.length-1; i++){
     
-    if(arr[i+1] - arr[i] !== deret){
-      cekFalse = cekFalse + arr[i+1] - arr[i] !== deret
+    if(arr[i+1] - arr[i] !== arr[i] - arr[i - 1]){
+      // cekFalse = cekFalse + arr[i+1] - arr[i] !== deret
       return false;
-    } else if(arr[i+1] - arr[i] === deret){
-      cekTrue = cekTrue + arr[i+1] - arr[i] === deret
+    // } else if(arr[i+1] - arr[i] === deret){
+    //   cekTrue = cekTrue + arr[i+1] - arr[i] === deret
     }
   }
   return true
