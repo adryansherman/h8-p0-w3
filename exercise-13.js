@@ -16,7 +16,7 @@ function targetTerdekat(arr) {
     }
   }
   
-  return tampungJarakXO[1] //ambil yang pertama karena paling dekat
+  return tampungJarakXO[0] //ambil index-0
 
 }
 console.log(targetTerdekat([' ', ' ', 'o', ' ', ' ', 'x', ' ', 'x'])); // 3
@@ -24,4 +24,4 @@ console.log(targetTerdekat(['o', ' ', ' ', ' ', 'x', 'x', 'x'])); // 4
 console.log(targetTerdekat(['x', ' ', ' ', ' ', 'x', 'x', 'o', ' '])); // 1
 console.log(targetTerdekat([' ', ' ', 'o', ' '])); // 0
 console.log(targetTerdekat([' ', 'o', ' ', 'x', 'x', ' ', ' ', 'x'])); // 2
-console.log(targetTerdekat([' ', ' ',' ', 'x', 'x', ' ', ' ', 'x'])); // 2
+console.log(targetTerdekat([' ', ' ',' ', 'x', 'x', ' ', ' ', 'x'])); // 0
