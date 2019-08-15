@@ -11,7 +11,6 @@ function targetTerdekat(arr){
         jarakXO = Math.abs(i - indexO) //jarak antar index: i sekarang udah jadi indikator lokasi tiap x dikurang dengan locator o 
         urutJarakXO.push(jarakXO); //ada beberapa jarak, sort dulu dapetin yang pendek
         urutJarakXO.sort()
-        console.log(urutJarakXO)
       }
   }
   return urutJarakXO[0]//ambil indek-0 karena yang paling pendek
